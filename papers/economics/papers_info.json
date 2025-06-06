@@ -1,0 +1,49 @@
+{
+  "2201.09125v1": {
+    "title": "The Link Between Standardization and Economic Growth: A Bibliometric Analysis",
+    "authors": [
+      "Jussi Heikkil\u00e4",
+      "Timo Ali-Vehmas",
+      "Julius Rissanen"
+    ],
+    "summary": "We analyze the link between standardization and economic growth by\nsystematically reviewing leading economics journals, leading economic growth\nresearchers' articles, and economic growth-related books. We make the following\nobservations: 1) No article has analyzed the link between standardization and\neconomic growth in top5 economics journals between 1996 and 2018. 2) A\nrepresentative sample of the leading researchers of economic growth has\nallocated little attention to the link between standardization and economic\ngrowth. 3) Typically, economic growth textbooks do not contain \"standards\" or\n\"standardization\" in their word indexes. These findings suggest that the\neconomic growth theory has neglected the role of standardization.",
+    "pdf_url": "http://arxiv.org/pdf/2201.09125v1",
+    "published": "2022-01-22"
+  },
+  "2208.07839v1": {
+    "title": "Why Economic Theories and Policies Fail? Unnoticed Variables and Overlooked Economics",
+    "authors": [
+      "Victor Olkhov"
+    ],
+    "summary": "Accuracy of economic theories and efficiency of economic policy strictly\ndepend on the choice of the economic variables and processes mostly liable for\ndescription of economic reality. That states the general problem of assessment\nof any possible economic variables and processes chargeable for economic\nevolution. We show that economic variables and processes described by current\neconomic theories constitute only a negligible fraction of factors responsible\nfor economic dynamics. We consider numerous unnoted economic variables and\noverlooked economic processes those determine the states and predictions of the\nreal economics. We regard collective economic variables, collective\ntransactions and expectations, mean risks of economic variables and\ntransactions, collective velocities and flows of economic variables,\ntransactions and expectations as overlooked factors of economic evolution. We\nintroduce market-based probability of the asset price and consider unnoticed\ninfluence of market stochasticity on randomness of macroeconomic variables. We\nintroduce economic domain composed by continuous numeric risk grades and\noutline that the bounds of the economic domain result in unnoticed inherent\ncyclical motion of collective variables, transactions and expectations those\nare responsible for observed business cycles. Our treatment of unnoticed and\noverlooked factors of theoretical economics and policy decisions preserves a\nwide field of studies for many decades for academic researchers, economic\nauthorities and high-level politicians.",
+    "pdf_url": "http://arxiv.org/pdf/2208.07839v1",
+    "published": "2022-08-14"
+  },
+  "2012.04506v1": {
+    "title": "Business Cycles as Collective Risk Fluctuations",
+    "authors": [
+      "Victor Olkhov"
+    ],
+    "summary": "We suggest use continuous numerical risk grades [0,1] of R for a single risk\nor the unit cube in Rn for n risks as the economic domain. We consider risk\nratings of economic agents as their coordinates in the economic domain.\nEconomic activity of agents, economic or other factors change agents risk\nratings and that cause motion of agents in the economic domain. Aggregations of\nvariables and transactions of individual agents in small volume of economic\ndomain establish the continuous economic media approximation that describes\ncollective variables, transactions and their flows in the economic domain as\nfunctions of risk coordinates. Any economic variable A(t,x) defines mean risk\nXA(t) as risk weighted by economic variable A(t,x). Collective flows of\neconomic variables in bounded economic domain fluctuate from secure to risky\narea and back. These fluctuations of flows cause time oscillations of\nmacroeconomic variables A(t) and their mean risks XA(t) in economic domain and\nare the origin of any business and credit cycles. We derive equations that\ndescribe evolution of collective variables, transactions and their flows in the\neconomic domain. As illustration we present simple self-consistent equations of\nsupply-demand cycles that describe fluctuations of supply, demand and their\nmean risks.",
+    "pdf_url": "http://arxiv.org/pdf/2012.04506v1",
+    "published": "2020-12-08"
+  },
+  "1702.02763v1": {
+    "title": "Econophysics of Macroeconomics: \"Action-at-a-Distance\" and Waves",
+    "authors": [
+      "Victor Olkhov"
+    ],
+    "summary": "We present macroeconomic model that describes evolution of macroeconomic\nvariables and macroeconomic waves on economic space. Risk ratings of economic\nagents play role of their coordinates on economic space. Aggregation of\neconomic variables like Assets and Investment, Credits and Loans of economic\nagents at point x define corresponding macroeconomic variables as functions of\ntime t and coordinates x on economic space. Evolution of macroeconomic\nvariables is determined by economic and financial transactions between economic\nagents. Such transactions can occur between economic agents with any\ncoordinates x and y and that reflect non-local \"action-at-a-distance\" character\nof internal macroeconomic interactions. For instance, Buy-Sell transactions\nbetween points x and y on economic space define dynamics of Assets at point x\nand Investment at point y. Aggregates of transactions between economic agents\nat point x and y on economic space define economic fields as functions of two\ncoordinates. To describe dynamics of economic fields on economic space we\nderive hydrodynamic-like equations. For simple models of interactions between\neconomic fields we derive hydrodynamic-like equations in a closed form and\nobtain wave equations for their perturbations. Economic field waves propagate\non economic space and their amplitudes can grow up as exponent in time and may\ndisturb economic stability. Diversities of macroeconomic and financial waves on\neconomic space in simple models uncover importance of wave processes for\nmacroeconomic modeling and forecasting.",
+    "pdf_url": "http://arxiv.org/pdf/1702.02763v1",
+    "published": "2017-02-09"
+  },
+  "1701.06625v1": {
+    "title": "Econophysics Macroeconomic Model",
+    "authors": [
+      "Victor Olkhov"
+    ],
+    "summary": "This paper presents macroeconomic model that is based on parallels between\nmacroeconomic multi-agent systems and multi-particle systems. We use risk\nratings of economic agents as their coordinates on economic space. Aggregates\nof economic or financial variables like Investment, Assets, Demand, Credits and\netc. of economic agents near point x define corresponding macroeconomic\nvariables as functions of time t and coordinates x on economic space. Parallels\nbetween multi-agent and multi-particle systems on economic space allow describe\ntransition from economic kinetic-like to economic hydrodynamic-like\napproximation and derive macroeconomic hydrodynamic-like equations on economic\nspace. Economic or financial transactions between economic agents determine\nevolution of macroeconomic variables This paper describes local macroeconomic\napproximation that takes into account transactions between economic agents with\ncoordinates near same point x on economic space only and describes interaction\nbetween macroeconomic variables by linear differential operators. For simple\nmodel of interaction between macroeconomic variables as Demand on Investment\nand Interest Rate we derive hydrodynamic-like equations in a closed form. For\nperturbations of these macroeconomic variables we derive macroeconomic wave\nequations. Macroeconomic waves on economic space can propagate with exponential\ngrowth of amplitude and cause irregular time fluctuations of macroeconomic\nvariables or induce economic crises.",
+    "pdf_url": "http://arxiv.org/pdf/1701.06625v1",
+    "published": "2017-01-20"
+  }
+}

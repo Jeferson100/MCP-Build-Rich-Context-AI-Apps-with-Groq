@@ -1,0 +1,21 @@
+{
+  "2502.18359v1": {
+    "title": "Responsible AI Agents",
+    "authors": [
+      "Deven R. Desai",
+      "Mark O. Riedl"
+    ],
+    "summary": "Thanks to advances in large language models, a new type of software agent,\nthe artificial intelligence (AI) agent, has entered the marketplace. Companies\nsuch as OpenAI, Google, Microsoft, and Salesforce promise their AI Agents will\ngo from generating passive text to executing tasks. Instead of a travel\nitinerary, an AI Agent would book all aspects of your trip. Instead of\ngenerating text or images for social media post, an AI Agent would post the\ncontent across a host of social media outlets. The potential power of AI Agents\nhas fueled legal scholars' fears that AI Agents will enable rogue commerce,\nhuman manipulation, rampant defamation, and intellectual property harms. These\nscholars are calling for regulation before AI Agents cause havoc.\n  This Article addresses the concerns around AI Agents head on. It shows that\ncore aspects of how one piece of software interacts with another creates ways\nto discipline AI Agents so that rogue, undesired actions are unlikely, perhaps\nmore so than rules designed to govern human agents. It also develops a way to\nleverage the computer-science approach to value-alignment to improve a user's\nability to take action to prevent or correct AI Agent operations. That approach\noffers and added benefit of helping AI Agents align with norms around user-AI\nAgent interactions. These practices will enable desired economic outcomes and\nmitigate perceived risks. The Article also argues that no matter how much AI\nAgents seem like human agents, they need not, and should not, be given legal\npersonhood status. In short, humans are responsible for AI Agents' actions, and\nthis Article provides a guide for how humans can build and maintain responsible\nAI Agents.",
+    "pdf_url": "http://arxiv.org/pdf/2502.18359v1",
+    "published": "2025-02-25"
+  },
+  "2506.01463v1": {
+    "title": "Agentic AI and Multiagentic: Are We Reinventing the Wheel?",
+    "authors": [
+      "V. Botti"
+    ],
+    "summary": "The terms Agentic AI and Multiagentic AI have recently gained popularity in\ndiscussions on generative artificial intelligence, often used to describe\nautonomous software agents and systems composed of such agents. However, the\nuse of these terms confuses these buzzwords with well-established concepts in\nAI literature: intelligent agents and multi-agent systems. This article offers\na critical analysis of this conceptual misuse. We review the theoretical\norigins of \"agentic\" in the social sciences (Bandura, 1986) and philosophical\nnotions of intentionality (Dennett, 1971), and then summarise foundational\nworks on intelligent agents and multi-agent systems by Wooldridge, Jennings and\nothers. We examine classic agent architectures, from simple reactive agents to\nBelief-Desire-Intention (BDI) models, and highlight key properties (autonomy,\nreactivity, proactivity, social capability) that define agency in AI. We then\ndiscuss recent developments in large language models (LLMs) and agent platforms\nbased on LLMs, including the emergence of LLM-powered AI agents and open-source\nmulti-agent orchestration frameworks. We argue that the term AI Agentic is\noften used as a buzzword for what are essentially AI agents, and AI\nMultiagentic for what are multi-agent systems. This confusion overlooks decades\nof research in the field of autonomous agents and multi-agent systems. The\narticle advocates for scientific and technological rigour and the use of\nestablished terminology from the state of the art in AI, incorporating the\nwealth of existing knowledge, including standards for multi-agent system\nplatforms, communication languages and coordination and cooperation algorithms,\nagreement technologies (automated negotiation, argumentation, virtual\norganisations, trust, reputation, etc.), into the new and promising wave of\nLLM-based AI agents, so as not to end up reinventing the wheel.",
+    "pdf_url": "http://arxiv.org/pdf/2506.01463v1",
+    "published": "2025-06-02"
+  }
+}

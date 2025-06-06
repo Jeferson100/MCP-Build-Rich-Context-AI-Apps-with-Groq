@@ -1,0 +1,17 @@
+[project]
+name = "mcp-build-rich-context-ai-apps-anthropic"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "anthropic>=0.51.0",
+    "arxiv>=2.2.0",
+    "groq>=0.26.0",
+    "langchain-groq>=0.3.2",
+    "mcp>=1.9.2",
+    "pypdf2>=3.0.1",
+    "python-dotenv>=1.1.0",
+    "typing>=3.10.0.0",
+    "uv>=0.7.11",
+]

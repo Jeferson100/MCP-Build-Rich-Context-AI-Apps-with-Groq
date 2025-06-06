@@ -1,0 +1,145 @@
+{
+  "2310.03714v1": {
+    "title": "DSPy: Compiling Declarative Language Model Calls into Self-Improving Pipelines",
+    "authors": [
+      "Omar Khattab",
+      "Arnav Singhvi",
+      "Paridhi Maheshwari",
+      "Zhiyuan Zhang",
+      "Keshav Santhanam",
+      "Sri Vardhamanan",
+      "Saiful Haq",
+      "Ashutosh Sharma",
+      "Thomas T. Joshi",
+      "Hanna Moazam",
+      "Heather Miller",
+      "Matei Zaharia",
+      "Christopher Potts"
+    ],
+    "summary": "The ML community is rapidly exploring techniques for prompting language\nmodels (LMs) and for stacking them into pipelines that solve complex tasks.\nUnfortunately, existing LM pipelines are typically implemented using hard-coded\n\"prompt templates\", i.e. lengthy strings discovered via trial and error. Toward\na more systematic approach for developing and optimizing LM pipelines, we\nintroduce DSPy, a programming model that abstracts LM pipelines as text\ntransformation graphs, i.e. imperative computational graphs where LMs are\ninvoked through declarative modules. DSPy modules are parameterized, meaning\nthey can learn (by creating and collecting demonstrations) how to apply\ncompositions of prompting, finetuning, augmentation, and reasoning techniques.\nWe design a compiler that will optimize any DSPy pipeline to maximize a given\nmetric. We conduct two case studies, showing that succinct DSPy programs can\nexpress and optimize sophisticated LM pipelines that reason about math word\nproblems, tackle multi-hop retrieval, answer complex questions, and control\nagent loops. Within minutes of compiling, a few lines of DSPy allow GPT-3.5 and\nllama2-13b-chat to self-bootstrap pipelines that outperform standard few-shot\nprompting (generally by over 25% and 65%, respectively) and pipelines with\nexpert-created demonstrations (by up to 5-46% and 16-40%, respectively). On top\nof that, DSPy programs compiled to open and relatively small LMs like\n770M-parameter T5 and llama2-13b-chat are competitive with approaches that rely\non expert-written prompt chains for proprietary GPT-3.5. DSPy is available at\nhttps://github.com/stanfordnlp/dspy",
+    "pdf_url": "http://arxiv.org/pdf/2310.03714v1",
+    "published": "2023-10-05"
+  },
+  "2504.20965v1": {
+    "title": "AegisLLM: Scaling Agentic Systems for Self-Reflective Defense in LLM Security",
+    "authors": [
+      "Zikui Cai",
+      "Shayan Shabihi",
+      "Bang An",
+      "Zora Che",
+      "Brian R. Bartoldson",
+      "Bhavya Kailkhura",
+      "Tom Goldstein",
+      "Furong Huang"
+    ],
+    "summary": "We introduce AegisLLM, a cooperative multi-agent defense against adversarial\nattacks and information leakage. In AegisLLM, a structured workflow of\nautonomous agents - orchestrator, deflector, responder, and evaluator -\ncollaborate to ensure safe and compliant LLM outputs, while self-improving over\ntime through prompt optimization. We show that scaling agentic reasoning system\nat test-time - both by incorporating additional agent roles and by leveraging\nautomated prompt optimization (such as DSPy)- substantially enhances robustness\nwithout compromising model utility. This test-time defense enables real-time\nadaptability to evolving attacks, without requiring model retraining.\nComprehensive evaluations across key threat scenarios, including unlearning and\njailbreaking, demonstrate the effectiveness of AegisLLM. On the WMDP unlearning\nbenchmark, AegisLLM achieves near-perfect unlearning with only 20 training\nexamples and fewer than 300 LM calls. For jailbreaking benchmarks, we achieve\n51% improvement compared to the base model on StrongReject, with false refusal\nrates of only 7.9% on PHTest compared to 18-55% for comparable methods. Our\nresults highlight the advantages of adaptive, agentic reasoning over static\ndefenses, establishing AegisLLM as a strong runtime alternative to traditional\napproaches based on model modifications. Code is available at\nhttps://github.com/zikuicai/aegisllm",
+    "pdf_url": "http://arxiv.org/pdf/2504.20965v1",
+    "published": "2025-04-29"
+  },
+  "2312.13382v2": {
+    "title": "DSPy Assertions: Computational Constraints for Self-Refining Language Model Pipelines",
+    "authors": [
+      "Arnav Singhvi",
+      "Manish Shetty",
+      "Shangyin Tan",
+      "Christopher Potts",
+      "Koushik Sen",
+      "Matei Zaharia",
+      "Omar Khattab"
+    ],
+    "summary": "Chaining language model (LM) calls as composable modules is fueling a new way\nof programming, but ensuring LMs adhere to important constraints requires\nheuristic \"prompt engineering\". We introduce LM Assertions, a programming\nconstruct for expressing computational constraints that LMs should satisfy. We\nintegrate our constructs into the recent DSPy programming model for LMs, and\npresent new strategies that allow DSPy to compile programs with LM Assertions\ninto more reliable and accurate systems. We also propose strategies to use\nassertions at inference time for automatic self-refinement with LMs. We report\non four diverse case studies for text generation and find that LM Assertions\nimprove not only compliance with imposed rules but also downstream task\nperformance, passing constraints up to 164% more often and generating up to 37%\nmore higher-quality responses. Our reference implementation of LM Assertions is\nintegrated into DSPy at https://github.com/stanfordnlp/dspy",
+    "pdf_url": "http://arxiv.org/pdf/2312.13382v2",
+    "published": "2023-12-20"
+  },
+  "2404.14544v1": {
+    "title": "WangLab at MEDIQA-CORR 2024: Optimized LLM-based Programs for Medical Error Detection and Correction",
+    "authors": [
+      "Augustin Toma",
+      "Ronald Xie",
+      "Steven Palayew",
+      "Patrick R. Lawler",
+      "Bo Wang"
+    ],
+    "summary": "Medical errors in clinical text pose significant risks to patient safety. The\nMEDIQA-CORR 2024 shared task focuses on detecting and correcting these errors\nacross three subtasks: identifying the presence of an error, extracting the\nerroneous sentence, and generating a corrected sentence. In this paper, we\npresent our approach that achieved top performance in all three subtasks. For\nthe MS dataset, which contains subtle errors, we developed a retrieval-based\nsystem leveraging external medical question-answering datasets. For the UW\ndataset, reflecting more realistic clinical notes, we created a pipeline of\nmodules to detect, localize, and correct errors. Both approaches utilized the\nDSPy framework for optimizing prompts and few-shot examples in large language\nmodel (LLM) based programs. Our results demonstrate the effectiveness of LLM\nbased programs for medical error correction. However, our approach has\nlimitations in addressing the full diversity of potential errors in medical\ndocumentation. We discuss the implications of our work and highlight future\nresearch directions to advance the robustness and applicability of medical\nerror detection and correction systems.",
+    "pdf_url": "http://arxiv.org/pdf/2404.14544v1",
+    "published": "2024-04-22"
+  },
+  "2503.10673v2": {
+    "title": "ZeroSumEval: An Extensible Framework For Scaling LLM Evaluation with Inter-Model Competition",
+    "authors": [
+      "Hisham A. Alyahya",
+      "Haidar Khan",
+      "Yazeed Alnumay",
+      "M Saiful Bari",
+      "B\u00fclent Yener"
+    ],
+    "summary": "We introduce ZeroSumEval, a dynamic, competition-based, and evolving\nevaluation framework for Large Language Models (LLMs) that leverages\ncompetitive games. ZeroSumEval encompasses a diverse suite of games, including\nsecurity challenges (Capture the Flag), classic board games (chess), and\nknowledge tests (MathQuiz). These games are designed to evaluate a range of\ncapabilities such as strategic reasoning, planning, knowledge application,\nsafety, and adaptability. Building upon recent studies that highlight the\neffectiveness of game-based evaluations for LLMs, ZeroSumEval enhances these\napproaches by providing a standardized and extensible framework for easily\nimplementing games and leverages DSPy to provide a better abstraction for LLM\nplayer strategies.",
+    "pdf_url": "http://arxiv.org/pdf/2503.10673v2",
+    "published": "2025-03-10"
+  },
+  "2505.20491v1": {
+    "title": "In-context learning capabilities of Large Language Models to detect suicide risk among adolescents from speech transcripts",
+    "authors": [
+      "Filomene Roquefort",
+      "Alexandre Ducorroy",
+      "Rachid Riad"
+    ],
+    "summary": "Early suicide risk detection in adolescents is critical yet hindered by\nscalability challenges of current assessments. This paper presents our approach\nto the first SpeechWellness Challenge (SW1), which aims to assess suicide risk\nin Chinese adolescents through speech analysis. Due to speech anonymization\nconstraints, we focused on linguistic features, leveraging Large Language\nModels (LLMs) for transcript-based classification. Using DSPy for systematic\nprompt engineering, we developed a robust in-context learning approach that\noutperformed traditional fine-tuning on both linguistic and acoustic markers.\nOur systems achieved third and fourth places among 180+ submissions, with 0.68\naccuracy (F1=0.7) using only transcripts. Ablation analyses showed that\nincreasing prompt example improved performance (p=0.003), with varying effects\nacross model types and sizes. These findings advance automated suicide risk\nassessment and demonstrate LLMs' value in mental health applications.",
+    "pdf_url": "http://arxiv.org/pdf/2505.20491v1",
+    "published": "2025-05-26"
+  },
+  "2405.08965v4": {
+    "title": "Meaning-Typed Programming: Language Abstraction and Runtime for Model-Integrated Applications",
+    "authors": [
+      "Jayanaka L. Dantanarayana",
+      "Yiping Kang",
+      "Kugesan Sivasothynathan",
+      "Christopher Clarke",
+      "Baichuan Li",
+      "Savini Kashmira",
+      "Krisztian Flautner",
+      "Lingjia Tang",
+      "Jason Mars"
+    ],
+    "summary": "Software development is shifting from traditional logical programming to\nmodel-integrated applications that leverage generative AI and large language\nmodels (LLMs) during runtime. However, integrating LLMs remains complex,\nrequiring developers to manually craft prompts and process outputs. Existing\ntools attempt to assist with prompt engineering, but often introduce additional\ncomplexity.\n  This paper presents Meaning-Typed Programming (MTP) model, a novel paradigm\nthat abstracts LLM integration through intuitive language-level constructs. By\nleveraging the inherent semantic richness of code, MTP automates prompt\ngeneration and response handling without additional developer effort. We\nintroduce the by operator for seamless LLM invocation, MT-IR, a meaning-based\nintermediate representation for semantic extraction, and MT-Runtime, an\nautomated system for managing LLM interactions. We implement MTP in Jac, a\nPython superset language and find that MTP significantly reduces coding\ncomplexity while maintaining accuracy and efficiency. Our evaluation across\ndiverse benchmarks and user studies demonstrates that MTP outperforms existing\nframeworks such as DSPy and LMQL by reducing lines of code by factors of\n2.3-7.5X and 1.3-10.7X respectively. For math problems from the GSM8k dataset,\nMTP achieves accuracy rates approaching 90%, while reducing token usage in 10\nout of 13 benchmarks. This leads to cost savings up to 4.5X and runtime\nspeedups as high as 4.75X. Additionally, MTP demonstrates resilience even when\n50% of naming conventions are suboptimal, establishing it as a practical,\nefficient solution for streamlining model-integrated application development.",
+    "pdf_url": "http://arxiv.org/pdf/2405.08965v4",
+    "published": "2024-05-14"
+  },
+  "2502.10522v1": {
+    "title": "GraphiT: Efficient Node Classification on Text-Attributed Graphs with Prompt Optimized LLMs",
+    "authors": [
+      "Shima Khoshraftar",
+      "Niaz Abedini",
+      "Amir Hajian"
+    ],
+    "summary": "The application of large language models (LLMs) to graph data has attracted a\nlot of attention recently. LLMs allow us to use deep contextual embeddings from\npretrained models in text-attributed graphs, where shallow embeddings are often\nused for the text attributes of nodes. However, it is still challenging to\nefficiently encode the graph structure and features into a sequential form for\nuse by LLMs. In addition, the performance of an LLM alone, is highly dependent\non the structure of the input prompt, which limits their effectiveness as a\nreliable approach and often requires iterative manual adjustments that could be\nslow, tedious and difficult to replicate programmatically. In this paper, we\npropose GraphiT (Graphs in Text), a framework for encoding graphs into a\ntextual format and optimizing LLM prompts for graph prediction tasks. Here we\nfocus on node classification for text-attributed graphs. We encode the graph\ndata for every node and its neighborhood into a concise text to enable LLMs to\nbetter utilize the information in the graph. We then further programmatically\noptimize the LLM prompts using the DSPy framework to automate this step and\nmake it more efficient and reproducible. GraphiT outperforms our LLM-based\nbaselines on three datasets and we show how the optimization step in GraphiT\nleads to measurably better results without manual prompt tweaking. We also\ndemonstrated that our graph encoding approach is competitive to other graph\nencoding methods while being less expensive because it uses significantly less\ntokens for the same task.",
+    "pdf_url": "http://arxiv.org/pdf/2502.10522v1",
+    "published": "2025-02-14"
+  },
+  "2412.15298v1": {
+    "title": "A Comparative Study of DSPy Teleprompter Algorithms for Aligning Large Language Models Evaluation Metrics to Human Evaluation",
+    "authors": [
+      "Bhaskarjit Sarmah",
+      "Kriti Dutta",
+      "Anna Grigoryan",
+      "Sachin Tiwari",
+      "Stefano Pasquali",
+      "Dhagash Mehta"
+    ],
+    "summary": "We argue that the Declarative Self-improving Python (DSPy) optimizers are a\nway to align the large language model (LLM) prompts and their evaluations to\nthe human annotations. We present a comparative analysis of five teleprompter\nalgorithms, namely, Cooperative Prompt Optimization (COPRO), Multi-Stage\nInstruction Prompt Optimization (MIPRO), BootstrapFewShot, BootstrapFewShot\nwith Optuna, and K-Nearest Neighbor Few Shot, within the DSPy framework with\nrespect to their ability to align with human evaluations. As a concrete\nexample, we focus on optimizing the prompt to align hallucination detection\n(using LLM as a judge) to human annotated ground truth labels for a publicly\navailable benchmark dataset. Our experiments demonstrate that optimized prompts\ncan outperform various benchmark methods to detect hallucination, and certain\ntelemprompters outperform the others in at least these experiments.",
+    "pdf_url": "http://arxiv.org/pdf/2412.15298v1",
+    "published": "2024-12-19"
+  },
+  "2403.15137v1": {
+    "title": "CACA Agent: Capability Collaboration based AI Agent",
+    "authors": [
+      "Peng Xu",
+      "Haoran Wang",
+      "Chuang Wang",
+      "Xu Liu"
+    ],
+    "summary": "As AI Agents based on Large Language Models (LLMs) have shown potential in\npractical applications across various fields, how to quickly deploy an AI agent\nand how to conveniently expand the application scenario of AI agents has become\na challenge. Previous studies mainly focused on implementing all the reasoning\ncapabilities of AI agents within a single LLM, which often makes the model more\ncomplex and also reduces the extensibility of AI agent functionality. In this\npaper, we propose CACA Agent (Capability Collaboration based AI Agent), using\nan open architecture inspired by service computing. CACA Agent integrates a set\nof collaborative capabilities to implement AI Agents, not only reducing the\ndependence on a single LLM, but also enhancing the extensibility of both the\nplanning abilities and the tools available to AI agents. Utilizing the proposed\nsystem, we present a demo to illustrate the operation and the application\nscenario extension of CACA Agent.",
+    "pdf_url": "http://arxiv.org/pdf/2403.15137v1",
+    "published": "2024-03-22"
+  }
+}
